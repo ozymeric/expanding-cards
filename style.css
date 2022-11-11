@@ -1,22 +1,20 @@
-/* This is the UDEMY solution of this project */
-/* ---------------------------------------------------------------------------------
----------------------------------------------------------------------------------
---------------------------------------------------------------------------------- */
-
-@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+/* This my solution for the project
+// ---------------------------------------------------------------------------------
+// ---------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------- */
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  font-family: "Muli", sans-serif;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   height: 100vh;
-  overflow: hidden;
-  margin: 0;
+  font-family: sans-serif;
 }
 
 .container {
@@ -25,44 +23,30 @@ body {
 }
 
 .panel {
+  margin: 0.5rem;
+  border-radius: 3rem;
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   height: 80vh;
-  border-radius: 50px;
-  color: #fff;
-  cursor: pointer;
   flex: 0.5;
-  margin: 10px;
+  color: white;
   position: relative;
-  -webkit-transition: all 700ms ease-in;
-}
-
-.panel h3 {
-  font-size: 24px;
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  margin: 0;
-  opacity: 0;
+  cursor: pointer;
+  transition: flex 1s;
 }
 
 .panel.active {
-  flex: 5;
+  flex: 7;
+  transition: all 1s ease-in-out;
+}
+
+.panel h3 {
+  position: absolute;
+  bottom: 1rem;
+  left: 2rem;
+  opacity: 0;
 }
 
 .panel.active h3 {
   opacity: 1;
-  transition: opacity 0.3s ease-in 0.4s;
-}
-
-@media (max-width: 480px) {
-  .container {
-    width: 100vw;
-  }
-
-  .panel:nth-of-type(4),
-  .panel:nth-of-type(5) {
-    display: none;
-  }
+  transition: opacity 0.8s ease-in-out 0.4s;
 }
