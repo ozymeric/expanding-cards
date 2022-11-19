@@ -1,7 +1,7 @@
 /* This is the UDEMY solution of this project */
 /* ---------------------------------------------------------------------------------
----------------------------------------------------------------------------------
---------------------------------------------------------------------------------- */
+--------------------!!! The share of this project is defining a "flex" value to a flex displayed element !!!--------------------
+------------------------------!! and using "opacity" for hiding/revealing elements !!--------------------------- */
 
 @import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
 
@@ -44,12 +44,15 @@ body {
   bottom: 20px;
   left: 20px;
   margin: 0;
+  /*This part is important !!! Changing opacity for an element !!! */
   opacity: 0;
 }
 
+/*This part is important !!! Using a flex value !!! */
 .panel.active {
   flex: 5;
 }
+
 
 .panel.active h3 {
   opacity: 1;
